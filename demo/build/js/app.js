@@ -1,0 +1,3 @@
+var app = angular.module('myApp',['ngRoute','ngMaterial','ngMessages']);
+
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJhcHAuanMiXSwic291cmNlc0NvbnRlbnQiOlsidmFyIGFwcCA9IGFuZ3VsYXIubW9kdWxlKCdteUFwcCcsWyduZ1JvdXRlJywnbmdNYXRlcmlhbCcsJ25nTWVzc2FnZXMnXSk7XG4iXSwiZmlsZSI6ImFwcC5qcyJ9
