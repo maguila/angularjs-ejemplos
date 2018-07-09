@@ -1,0 +1,22 @@
+{
+  "name": "demo",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.7.2",
+    "angular": "^1.7.2",
+    "angular-material": "^1.1.10",
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1"
+  }
+}
