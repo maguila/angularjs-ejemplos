@@ -1,0 +1,41 @@
+
+<div class="container">
+    <md-button ng-href="#!" class="md-raised">Volver a Pagina principal </md-button>
+    <md-button class="md-raised md-primary">Ir al CRUD</md-button>
+    <md-button class="md-raised md-success">Ir a Pagina de Administración</md-button>
+    <md-button class="md-raised md-warn">Abrir Modal</md-button>
+    <md-button class="md-warn md-raised md-hue-2" ng-click="$ctrl.abrirMensaje()">{{$ctrl.variable}}</md-button>
+
+
+    <div layout="row" layout-align="space-around">
+        <div style="width:50px"></div>
+        <md-button ng-click="$ctrl.showSimpleToast()">
+            Show Simple
+        </md-button>
+        <md-button class="md-raised" ng-click="$ctrl.showActionToast()">
+            Show With Action
+        </md-button>
+        <div style="width:50px"></div>
+    </div>
+
+    <div layout="row" id="toastBounds">
+
+        <div> 
+            <p>
+                <b>Toast Position: "{{$ctrl.getToastPosition()}}"</b>
+            </p>
+            <md-checkbox ng-repeat="(name, isSelected) in $ctrl.toastPosition" ng-model="$ctrl.toastPosition[name]">
+                {{$ctrl.name}}
+            </md-checkbox>
+        </div>
+    </div>
+    <div layout="row">
+        <md-button class="md-primary md-fab md-fab-bottom-right">
+            FAB
+        </md-button>
+        <md-button class="md-accent md-fab md-fab-top-right">
+            FAB
+        </md-button>
+
+    </div>
+</div>
