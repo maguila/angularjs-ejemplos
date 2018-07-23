@@ -8,6 +8,8 @@ angular.module('myApp').
             $routeProvider.
                 when('/login', { template: '<login></login>' } ).
                 when('/inicio', { template: '<inicio></inicio>' } ).
+                when('/admin', { template: '<admin></admin>' } ).
+                when('/admin-bootstrap', { template: '<admin-bootstrap></admin-bootstrap>' } ).
                 otherwise('/');
         }
 ]);

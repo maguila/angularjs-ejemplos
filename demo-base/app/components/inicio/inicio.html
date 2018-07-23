@@ -1,11 +1,10 @@
 
 <div class="container">
-    <md-button ng-href="#!" class="md-raised">Volver a Pagina principal </md-button>
+    <md-button ng-href="#!" class="md-raised">Volver a Página principal </md-button>
     <md-button class="md-raised md-primary">Ir al CRUD</md-button>
-    <md-button class="md-raised md-success">Ir a Pagina de Administración</md-button>
+    <md-button ng-href="#!/admin" class="md-raised md-success">Ir a Pagina de Administración</md-button>
     <md-button class="md-raised md-warn">Abrir Modal</md-button>
     <md-button class="md-warn md-raised md-hue-2" ng-click="$ctrl.abrirMensaje()">{{$ctrl.variable}}</md-button>
-
 
     <div layout="row" layout-align="space-around">
         <div style="width:50px"></div>
@@ -31,7 +30,7 @@
     </div>
     <div layout="row">
         <md-button class="md-primary md-fab md-fab-bottom-right">
-            FAB
+            Menu
         </md-button>
         <md-button class="md-accent md-fab md-fab-top-right">
             FAB

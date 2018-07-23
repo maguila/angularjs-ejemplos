@@ -1,0 +1,282 @@
+<div layout="row">
+    <md-toolbar>
+
+        <div class="md-toolbar-tools">
+
+            <h2 md-truncate>REDAIL</h2>
+            <md-menu-bar>
+
+                <md-menu>
+                    <md-button ng-click="$mdMenu.open()">
+                        Menu Principal
+                    </md-button>
+                    <md-menu-content>
+                        <md-menu-item>
+                            <md-button ng-click="ctrl.sampleAction('share', $event)">
+                                Mis Propiedades
+                            </md-button>
+                        </md-menu-item>
+                        <md-menu-item>
+                            <md-button ng-click="ctrl.sampleAction('share', $event)">
+                                Listado de Usuarios
+                            </md-button>
+                        </md-menu-item>
+                    </md-menu-content>
+
+                </md-menu>
+
+                <md-menu>
+
+                    <md-button ng-click="$mdMenu.open()">
+                        Configuraciones
+                    </md-button>
+                    <md-menu-content>
+                        <md-menu-item>
+                            <md-button ng-click="ctrl.sampleAction('share', $event)">
+                                Share...
+                            </md-button>
+                        </md-menu-item>
+                    </md-menu-content>
+
+                </md-menu>
+            </md-menu-bar>
+
+        </div>
+
+    </md-toolbar>
+
+</div>
+
+
+
+<md-button class="md-accent md-fab md-fab-top-left" ng-click="$ctrl.toggleLeft()" ng-show="false">
+    Menu
+</md-button>
+
+<md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
+    <md-toolbar class="md-theme-indigo">
+        <h1 class="md-toolbar-tools">Menu principal</h1>
+    </md-toolbar>
+    <md-content layout-padding>
+        <md-button ng-click="$ctrl.toggleLeft()" class="md-raised ">
+            Cerrar Menu
+        </md-button>
+        <p hide show-gt-md>
+            This sidenav is locked open on your device. To go back to the default behavior, narrow your display.
+        </p>
+
+        <div layout="column">
+            <md-button class="md-raised" style="text-align: left;">
+                Propiedades
+            </md-button>
+            <md-button class="md-raised" style="text-align: left;">
+                Mis Contactos
+            </md-button>
+            <md-button class="md-raised" style="text-align: left;">
+                Configuraciones
+            </md-button>
+            <md-button class="md-raised" style="text-align: left;">
+                Listado Usuarios
+            </md-button>
+
+            <br>
+
+            <md-button class="md-raised md-warn" style="text-align: left;">
+                Cerrar Sesión
+            </md-button>
+        </div>
+
+    </md-content>
+</md-sidenav>
+
+
+<div layout="row" flex>
+
+    <md-sidenav class="md-sidenav-left" md-whiteframe="4" md-is-locked-open="true" flex="20">
+        <div layout="column">
+            <md-button class="md-raised" style="text-align: left;">
+                Propiedades
+            </md-button>
+            <md-button class="md-raised" style="text-align: left;">
+                Mis Contactos
+            </md-button>
+            <md-button class="md-raised" style="text-align: left;">
+                Configuraciones
+            </md-button>
+            <md-button class="md-raised" style="text-align: left;">
+                Listado Usuarios
+            </md-button>
+
+            <br>
+
+            <md-button class="md-raised md-warn" style="text-align: left;">
+                Cerrar Sesión
+            </md-button>
+        </div>
+    </md-sidenav>
+
+    <div layout="column">
+        <div layout="column" layout-align="top center" style="margin-top: 20px;">
+            <h2>Bienvenido Miguel</h2>
+    
+            <p>
+                The left sidenav will 'lock open' on a medium (>=960px wide) device.
+            </p>
+            <p>
+                The right sidenav will focus on a specific child element.
+            </p>
+    
+            <md-button ng-click="$ctrl.toggleRight()" ng-hide="$ctrl.isOpenRight()" class="md-primary">
+                Toggle right
+            </md-button>
+    
+            <md-button ng-click="$ctrl.toggleLeft()" class="md-primary">
+                Toggle left
+            </md-button>
+
+            <md-button>holaaa</md-button>
+    
+        </div>
+
+        <div layout="row" layout-align="center" class="md-padding">
+    
+            <md-card md-theme="dark-orange" flex="50">
+                <md-toolbar>
+                    <div class="md-toolbar-tools">
+                        <div flex md-truncate>Mis Actividades</div>
+                    </div>
+                </md-toolbar>
+    
+                <md-card-content>
+                    HOLA component
+                    <br> holaa de nuevo dsaasd sdsada dasd Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, recusandae
+                    esse ea deserunt corrupti similique quisquam nihil reiciendis, deleniti animi nulla, accusantium aliquam
+                    architecto neque possimus. Velit distinctio dolorem rem!
+                </md-card-content>
+    
+            </md-card>
+    
+            <md-card md-theme="dark-orange" flex="50">
+                <md-toolbar>
+                    <md-card-title>
+                        <md-card-title-text>
+                            <span>Titulo </span>
+                        </md-card-title-text>
+                    </md-card-title>
+                </md-toolbar>
+    
+                <md-card-content>
+                    HOLA component
+                    <br> holaa de nuevo
+                </md-card-content>
+    
+            </md-card>
+    
+            <md-card md-theme="dark-orange" flex="50">
+                <md-toolbar>
+                    <md-card-title>
+                        <md-card-title-text>
+                            <span>Titulo </span>
+                        </md-card-title-text>
+                    </md-card-title>
+                </md-toolbar>
+    
+                <md-card-content>
+                    HOLA component
+                    <br> holaa de nuevo
+                </md-card-content>
+    
+            </md-card>
+    
+        </div>
+
+        <div layout="row" layout-align="center" class="md-padding">
+    
+                <md-card md-theme="dark-orange" flex="50">
+                    <md-toolbar>
+                        <div class="md-toolbar-tools">
+                            <div flex md-truncate>Mis Actividades</div>
+                        </div>
+                    </md-toolbar>
+        
+                    <md-card-content>
+                        HOLA component
+                        <br> holaa de nuevo dsaasd sdsada dasd Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, recusandae
+                        esse ea deserunt corrupti similique quisquam nihil reiciendis, deleniti animi nulla, accusantium aliquam
+                        architecto neque possimus. Velit distinctio dolorem rem!
+                    </md-card-content>
+        
+                </md-card>
+        
+                <md-card md-theme="dark-orange" flex="50">
+                    <md-toolbar>
+                        <md-card-title>
+                            <md-card-title-text>
+                                <span>Titulo </span>
+                            </md-card-title-text>
+                        </md-card-title>
+                    </md-toolbar>
+        
+                    <md-card-content>
+                        HOLA component
+                        <br> holaa de nuevo
+                    </md-card-content>
+        
+                </md-card>
+        
+                <md-card md-theme="dark-orange" flex="50">
+                    <md-toolbar>
+                        <md-card-title>
+                            <md-card-title-text>
+                                <span>Titulo </span>
+                            </md-card-title-text>
+                        </md-card-title>
+                    </md-toolbar>
+        
+                    <md-card-content>
+                        HOLA component
+                        <br> holaa de nuevo
+                    </md-card-content>
+        
+                </md-card>
+        
+            </div>        
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<md-sidenav class="md-sidenav-right md-whiteframe-4dp" md-component-id="right">
+
+    <md-toolbar class="md-theme-light">
+        <h1 class="md-toolbar-tools">Sidenav Right</h1>
+    </md-toolbar>
+    <md-content layout-padding>
+        <form>
+            <md-input-container>
+                <label for="testInput">Test input</label>
+                <input type="text" id="testInput" ng-model="data" md-autofocus>
+            </md-input-container>
+        </form>
+        <md-button ng-click="$ctrl.close()" class="md-primary">
+            Close Sidenav Right
+        </md-button>
+    </md-content>
+
+</md-sidenav>

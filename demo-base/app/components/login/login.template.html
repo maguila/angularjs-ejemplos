@@ -1,23 +1,29 @@
-<md-card>
-    <md-card-content>
-        <md-input-container>
-            <label>Usuario</label>
-            <input ng-model="$ctrl.usuario">
-        </md-input-container>
+<div layout="column" layout-align="top center" style="padding-top: 50px">
 
-        <md-checkbox ng-model="ctrl.disableParentScroll">Disable Parent Scroll</md-checkbox> 
+    <img src="/app/img/logo.png" width="15%" />
 
-        <div class="demo-md-panel-content">
-            <md-button class="md-primary md-raised demo-menu-open-button">
-                Ingresar
-            </md-button>
-            <md-button ng-href="#!" class="md-primary md-raised demo-menu-open-button">
-                Volver a Pagina Principal
-            </md-button>
-        </div>
+    <md-card style="width: 500px;">
 
-    </md-card-content>
-    <md-card-footer>
-        Card footer
-    </md-card-footer>
-</md-card>
+        <md-card-title layout="column" layout-align="center center">
+            <md-card-title-text>
+                <div style="font-size: 17px">Iniciar Sesión</div>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+            <div layout="column">
+                <md-input-container>
+                    <label>Usuario</label>
+                    <input ng-model="$ctrl.usuario">
+                </md-input-container>
+                <md-input-container>
+                    <label>Password</label>
+                    <input type="password" ng-model="$ctrl.password">
+                </md-input-container>
+
+                <md-button class="md-default md-raised" ng-href="#!/admin">
+                    Ingresar
+                </md-button>
+            </div>
+        </md-card-content>
+    </md-card>
+</div>

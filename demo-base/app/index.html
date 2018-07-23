@@ -23,35 +23,29 @@
     <script src="js/app.config.js"></script>
     <script src="components/inicio/inicio.component.js"></script>
     <script src="components/login/login.component.js"></script>
+    <script src="components/admin/admin.component.js"></script>
+    <script src="components/admin-bootstrap/admin-bootstrap.component.js"></script>
 
 </head>
 
 <body ng-app="myApp">
 
-
-    <div class="container">
-
-        <div class="view-container">
-            <div ng-view class="view-frame"></div>
-        </div>
-    
-    
-        <div ng-controller="myController">
-            <md-button ng-href="#!/inicio" class="md-raised md-primary">Ir a Inicio </md-button>
-            <md-button ng-href="#!/login" class="md-raised">Ir al Login </md-button>
-
-            <br>
-
-            variable === {{hola}}
-            <br>
-            <md-checkbox ng-model="cb1" aria-label="Checkbox 1">
-                Checkbox 1:
-            </md-checkbox>
-        </div>
-    
-
+    <div class="view-container">
+        <div ng-view class="view-frame"></div>
     </div>
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div ng-controller="myController" layout="row" layout-align="center center">
+        <md-button ng-href="#!/inicio" class="md-raised md-primary">Ir a Inicio </md-button>
+        <md-button ng-href="#!/login" class="md-raised">Ir al Login </md-button>
+        <md-button ng-href="#!/admin" class="md-raised">Ir al Admin </md-button>
+    </div>
+
+    
 </body>
 
 </html>
